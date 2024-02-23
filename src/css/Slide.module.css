@@ -1,0 +1,22 @@
+.container {
+    overflow: hidden;
+}
+.content {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+.item {
+    width: 80%;
+    flex-shrink: 0;
+    margin-inline: 10%;
+    padding-block: 10rem;
+    background: #eee;
+    border-radius: 4px;
+    text-align: center;
+}
+.nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+}

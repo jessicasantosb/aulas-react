@@ -1,0 +1,41 @@
+body {
+    padding-left: 2rem;
+    background-color: #C6DCBA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    padding-top: 3rem;
+    text-align: center;
+}
+button {
+    margin: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+form, form div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    padding-top: 0.5rem;
+}
+fieldset {
+    margin-block: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.active {
+    background-color: #35374B;
+    color: #ffff;
+    padding: 5px;
+    text-decoration: none;
+}
