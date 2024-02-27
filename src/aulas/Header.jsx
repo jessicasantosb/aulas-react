@@ -7,8 +7,8 @@ function Header() {
   React.useEffect(() => {
     // mostrar que o usuario entrou nessa pagina
     // pode ser usado para animacoes, fetch, google analitics
-    console.log("Mudou a rota");
-  }, [location])
+    // console.log("Mudou a rota");
+  }, [location]);
 
   return (
     <div>

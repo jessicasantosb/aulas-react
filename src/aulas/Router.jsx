@@ -1,12 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 function Router() {
   return (
     <div>
       <h1>Router</h1>
-      <NavLink to="produtos/notebook">Notebook</NavLink>{" "}
-      <NavLink to="produtos/smartphone">Smartphone</NavLink>
+
+      <nav className="nav-links">
+        <NavLink to="" >
+          Produtos
+        </NavLink>
+        <NavLink to="contato">Contato</NavLink>
+      </nav>
+
+      <Outlet />
     </div>
   );
 }
