@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 function Header() {
+  console.log("renderizou");
+
   const location = useLocation();
 
   React.useEffect(() => {
@@ -42,9 +44,12 @@ function Header() {
         <NavLink to="router" end>
           Router
         </NavLink>
+        <NavLink to="maisreact" end>
+          Mais React
+        </NavLink>
       </div>
     </div>
   );
 }
 
-export default Header;
+export default React.memo(Header);

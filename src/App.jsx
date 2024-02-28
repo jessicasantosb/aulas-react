@@ -14,9 +14,16 @@ import Header from "./aulas/Header";
 import Error from "./aulas/ErrorPage";
 
 function App() {
+  const [contar, setContar] = React.useState(0);
+
   return (
     <BrowserRouter>
       <Header />
+
+      <button onClick={() => setContar(contar + 1)}>
+        {contar} | React.memo(Header)
+      </button>
+
       <Routes>
         <Route path="/" element={<Iniciante />} />
         <Route path="hooks" element={<Hooks />} />
@@ -28,6 +35,8 @@ function App() {
           <Route path="produto/:id" element={<DesafioProduto/>}/>
           <Route path="contato" element={<DesafioContato />} />
         </Route>
+
+        <Route path="maisreact" element={<MaisReact />} />
 
         <Route path="*" element={<Error />} />
       </Routes>
